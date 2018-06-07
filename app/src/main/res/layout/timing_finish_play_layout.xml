@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/timing_textCenter_style"
+        android:background="@color/white"
+        android:text="@string/timingFinished" />
+
+    <RelativeLayout
+        android:id="@+id/rl_finishPlay"
+        style="@style/timingRlStyle">
+
+        <TextView
+            android:id="@+id/tv_finishPlay"
+            style="@style/timingTVStyle"
+            android:text="@string/playStop" />
+
+        <ImageView
+            style="@style/timingIVStyle"
+            android:contentDescription="@string/image"
+            android:src="@mipmap/selected" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_exit"
+        style="@style/timingRlStyle">
+
+        <TextView
+            android:id="@+id/tv_exit"
+            style="@style/timingTVStyle"
+            android:text="@string/exit" />
+
+        <ImageView
+            style="@style/timingIVStyle"
+            android:contentDescription="@string/image"
+            android:src="@mipmap/selected" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        style="@style/timing_textCenter_style"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:text="@string/cancel" />
+</LinearLayout>

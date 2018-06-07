@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_timingParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="@string/TimingNotOpen"
+            android:textColor="@color/blue"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_close"
+            style="@style/timingRlStyle"
+            android:layout_marginBottom="9dp">
+
+            <TextView
+                android:id="@+id/tv_close"
+                style="@style/timingTVStyle"
+                android:text="@string/close" />
+
+            <ImageView
+                style="@style/timingIVStyle"
+                android:contentDescription="@string/image"
+                android:src="@mipmap/selected" />
+        </RelativeLayout>
+
+        <com.example.spirit.noahmusicf.ui.view.MyListView
+            android:id="@+id/lv_timingList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/rl_stopPlay"
+            style="@style/timingRlStyle"
+            android:layout_marginTop="9dp">
+
+            <TextView
+                android:id="@+id/tv_playStop"
+                style="@style/timingTVStyle"
+                android:text="@string/timingEndStyle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/playStop"
+                android:textColor="#999"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_finishPlay"
+            style="@style/timingRlStyle">
+
+            <TextView
+                android:id="@+id/tv_finishPlay"
+                style="@style/timingTVStyle"
+                android:text="@string/finishPlay" />
+
+            <ImageView
+                style="@style/timingIVStyle"
+                android:contentDescription="@string/image"
+                android:src="@mipmap/selected" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
